@@ -1,0 +1,225 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+%Version for spanish users, by dgarhdez
+
+\documentclass[10pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{}{}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+%\address{Dirección}{CP, Ciudad}{País}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\phone[mobile]{000-000-000-000}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+%\email{mailmailmail@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Kenneth G. Paterson} {Editor In Chief\\
+%Journal of Cryptology\\Berlin Tiergartenstrasse 17. D-69121 Heidelberg Germany}
+\date{\today}
+\opening{Dra. Martinez:}
+\closing{Muchas gracias por su tiempo e interés y reciba un cordial saludo.}
+\enclosure[Adjunto]{CV}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Gracias por tomar el tiempo de leer y analizar el avance de proyecto, después de las revisiones de los compañeros se han hecho múltiples correcciones y espero el documento adjunto a esta carta tenga una calidad mas aceptable que el entregado en la ocasión anterior. A continuación doy mi respuesta a las observaciones de los compañeros que tuvieron la tarea de revisar mi documento.
+
+
+
+
+\section*{Primer editor}
+
+Gracias por su dedicado y extensivo análisis del proyecto en cuestión, temo mucho que haya encontrado errores gramaticales y peor aún de ortografía en el documento a pesar de mis varias revisiones. A continuación responderé a sus observaciones:\\
+\hfill \break
+\textbf{En el planteamiento del problema cuando se hace referencia a la Figura 1, no se compiló de manera correcta el documento, por lo tanto, no es visible la referencia de la imagen.}\\
+\hfill \break
+Se ha hecho la corrección pertinente en el documento en la sección 1.1, ahora la referencia se ve correctamente.
+
+
+\textbf{En el planteamiento del problema, se hace referencia a la siguiente parte: “En este proyecto se pretende diseñar implementación de Blockchain”, la redacción no es correcta.}
+\hfill \break
+\hfill \break
+Se ha corregido el 9º párrafo del planteamiento del problema para corregir este error de la siguiente manera:\\
+\hfill \break
+\textit{``En este proyecto se pretende diseñar un protocolo Blockchain que utilize  métodos criptográficos como alternativa a los métodos de proof-of-work por medio de esfuerzo computacional, y que al mismo tiempo logre mantener el mismo o un mejor nivel de seguridad para la validación de los nuevos bloques dentro de la cadena de transacciones''}.
+
+\textbf{Último párrafo de la justificación: “En base a las cualidades”, debe ser expresado como: “Con base en las cualidades”}\\
+\hfill \break
+También se ha corregido la sintaxis del texto del párrafo en cuestión para que ahora se pueda leer de la siguiente manera:
+\hfill \break  
+\textit{``Con base en las cualidades que se proponen para el nuevo protocolo, se permitiría que la adopción de protocolos basados en Blockchain crezcan de manera mas rápida y con una infraestructura menor y con menos impacto a nivel energético''}.\\
+\hfill \break
+\textbf{En el objetivo general el segundo párrafo no se considera necesario, puede ser incluido en la justificación del problema o desglosado en los objetivos particulares.}\\
+\hfill \break
+Tiene razón en ese punto, el segundo párrafo del objetivo general es reiterativo una vez que se leen los objetivos específicos, por lo cual es mejor eliminarlo.\\
+\hfill \break
+\textbf{En los objetivos particulares es necesario definir el método para evaluar la velocidad del protocolo.}\\
+\hfill \break
+No hay método específico para la medición de la velocidad de un protocolo, se colocarán códigos de manejo de timestamp en el código de las versiones originales y modificadas del protocolo para medir su velocidad, las pruebas de ambos se harán en el mismo equipo para poder tener un resultado válido.
+ 
+\hfill \break
+\textbf{Se debió escribir explícitamente que el nombre de la metodología a usar es metodología para investigación cuantitativa.}
+
+\hfill \break
+El primer párrafo de la sección de metodología se ha modificado para tomar en cuenta las sugerencias. Además, se ha agregado un diagrama de la metodologío empleada.
+\hfill \break
+ 
+\textit{``La investigación actual se considera del tipo experimental y se manejará una implementación del método de investigación cuantitativa presentada por Hernádez Sampieri[15] el cual se puede visualizar en la Figura 2. Basado en dicha metodología se generará un conjunto de pasos específicos para analizará la posibilidad de implementar un criptosistema blockchain basado en sistemas criptográficos y comprobar su funcionalidad y nivel de seguridad como alternativa a los sistemas blockchain existentes.''}.\\
+\hfill \break
+
+
+%------------------------------------------------------
+%------------------------------------------------------
+
+\section*{Segundo Editor}
+
+Muchas gracias por sus comentarios, la mayoría de ellos se han podido tomar en cuenta, aún así hay algunos que son difíciles de analizar por ser un poco vagos, pero para poder tomarlos en cuenta se dieron lecturas adicionales al documento para poder tratar de resolverlos, espero el documento enviado 
+
+\textbf{Corregir ortografía, por ejemplo: “metodologia, multiples, calculo”.}
+
+Se han corregido varias errores con acentos, me encuentro corrigiendo el diccionario de la computadora donde trabajo, pues muchos de ellos no fueron tomados en cuenta.
+
+\hfill \break
+\textbf{El índice no debe ir en formato arábigo, debe ir en numeración romana.}
+
+\hfill \break
+Se ha corregido el manejo del indice y la numeración de páginas de este y el contenido principal.
+
+\hfill \break
+\textbf{Existen párrafos escritos de manera informal o presentan pleonasmos.}
+
+\hfill \break
+Se ha corregido la manera de escribir varios de los párrafos que podrían considerados reiterativos, pero si aún se encontraran algunos me sería muy util que pudiera señalar cuales encuentra con estas cualidades para analizarlos con más detalle. 
+
+\hfill \break
+\textbf{La Figura no está correctamente numerada.}
+
+\hfill \break
+Se ha corregido la referencia a la Figura 1 de la página 1.
+
+\hfill \break
+\textbf{No debe usar juicios de valor en los enunciados, por ejemplo: “.al mismo tiempo logre mantener el mismo o un mejor nivel...”.}
+
+\hfill \break
+Se corrigieron los juicios de valor que se cree se encuentran en el documento.
+
+\hfill \break
+\textbf{Carece de referencias bibliográficas en algunos párrafos, por ejemplo: “Blockchain ha sido calificado como la tecnología más disruptiva del año 2017”.}
+
+\hfill \break
+Se han agregado referencias adicionales a algunos párrafos no solo en el anunciado mencionado sino en algunos otros que pudieran faltar a lo largo de todo el documento.
+
+\hfill \break
+\textbf{Presenta demasiados objetivos particulares, se deben resumir algunos aspectos.}
+
+Se ha reducido en el número de objetivos particulares, principalmente se han eliminado algunos que podían considerarse obvios.
+
+%------------------------------------------------------
+%------------------------------------------------------
+
+\section*{Tercer Editor}
+
+
+Muchas gracias no solo por sus comentarios dados en su carta, sino a los adicionales que agregó en el documento adjuntado originalmente, los cuales ayudaron bastante a encontrar de manera puntual varios de los errores por corregir en el documento. A continuación se responde a las demás anotaciones hechas por su parte:
+
+
+\subsection{Justificación:}
+
+\textbf{¿Quiénes serán los beneficiarios y de qué modo?}
+
+
+\hfill \break
+Los investigadores en areas como el desarrollo de Internet de las cosas, contratos inteligentes como se describe en el párrafo de la justificación.
+
+\hfill \break
+\textbf{¿Cuál es su utilidad?}
+
+En los párrafos 2 y 3 se describen las utilidades de Blockchain en general del sistema propuesto.
+
+\hfill \break
+\textbf{¿Se podrán generalizar los resultados a principios más amplios?}
+
+\hfill \break
+Cómo se plantea un desarrollo general si se pueden generalizar los resultados para otras aplicaciones.
+
+\hfill \break
+\subsection{Objetivos:}
+
+\textbf{El objetivo general se debe de redactar brevemente, debe de ser claro y preciso.}
+
+\hfill \break
+Se ha corregido el objetivo general para ser mas corto como se puede ver a continuación:
+ 
+\hfill \break 
+ \textit{``Desarrollar un sistema de validación de transacciones tipo Blockchain basado en sistemas criptográficos post cuánticos para reducir el tiempo de cómputo utilizado para generar las pruebas de trabajo de los nuevos bloques de las cadenas.''}
+ 
+\hfill \break 
+\textbf{En los objetivos específicos:
+Falto agregar lo que se pretende lograr en cada una de las etapas. Se puede simplificar en una cantidad menor (máximo 5 objetivos específicos)}
+
+\hfill \break
+
+Los objetivos específicos se han reducido como se puede ver en la sección 1.3.2 del documento corregido adjunto.
+
+\hfill \break
+\subsection{Metodología:}
+\textbf{En esta sección se debe de redactar en futuro o pasado en caso de haber concluido cada etapa respectivamente (las etapas concluidas en pasado y las etapas faltantes en futuro).}
+
+\hfill \break
+Se corrigió el tiempo de conjugación de los pasos de la metodología 
+
+
+\vspace{0.5cm}
+Benjamin Oribe Mendieta\\
+Corresponding author.\\
+Universidad Politécnica de Pachuca\\
+Carretera Pachuca - Cd. Sahagún km 20 Ex-Hacienda de Santa Bárbara, Zempoala, Hidalgo, México.\\ boribem@micorreo.upp.edu.mx\\
++52 7711846606\\
+
+
+
+%\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.
